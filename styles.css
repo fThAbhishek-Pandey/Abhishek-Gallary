@@ -241,9 +241,15 @@ Modal
 .main-img {
   width: 100%;
   max-width: 72rem;
-  height: 50rem;
+  height: 30rem;
   object-fit: cover;
   border-radius: var(--radius);
+}
+@media screen and (min-width : 700px){
+  .main-img{
+    height: 50rem;
+  }
+ 
 }
 .image-name {
   text-align: center;
@@ -259,6 +265,7 @@ Modal
   max-width: 164px;
   height: 5rem;
   object-fit: cover;
+  margin-bottom: 0.2rem;
   opacity: 0.5;
   transition: var(--transition);
   cursor: pointer;
