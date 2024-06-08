@@ -48,7 +48,7 @@ class Gallery{
          console.log("selectedImage : ",selectedImage);
          console.log("list3 : ",list);
          this.modalImages.innerHTML = list.map(function (image){
-              return `<img src="${image.src}"  title="${image.title}" data-id="${image.dataset.id}" class="${image.dataset.id ===selectedImage.dataset.id? 'modal-img selected':'modal-img'}" alt="" />;
+              return `<img src="${image.src}"  title="${image.title}" data-id="${image.dataset.id}" class="${image.dataset.id ===selectedImage.dataset.id? 'modal-img selected':'modal-img'}" alt="" />
               `
          }).join('');
          this.modal.classList.add("open");
